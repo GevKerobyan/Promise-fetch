@@ -1,0 +1,226 @@
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: inherit;
+    font-size: inherit;
+}
+
+html,
+body {
+    height: 100%;
+    line-height: 1;
+    color: aliceblue;
+}
+
+/* ------------------------------ */
+
+.container {
+    position: relative;
+    width: 1000px;
+    height: 140px;
+    left: calc(50% - 500px);
+    top: calc(50% - 300px);
+    background-image: url(img/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    transition: all 1s ease-in-out;
+}
+
+.container__input-box {
+    height: 100px;
+    margin-bottom: 50px;
+    width: 100%;
+    padding: 0 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: dotted 1px goldenrod;
+}
+
+.container__input-box label {
+    font-size: 20px;
+}
+
+.input-box__input {
+    height: 40px;
+    width: 250px;
+    margin: 0 75px 0 200px;
+    padding: 0 20px;
+    background: transparent;
+    color: aliceblue;
+    font-size: 18px;
+    border-style: dotted;
+    border-width: 1px;
+    border-radius: 4px;
+    outline: none;
+}
+
+.input-box__input:focus::placeholder {
+    color: transparent;
+}
+
+.input-box__input::placeholder {
+    color: rgba(240, 248, 255, 0.7);
+}
+
+.input-box__button {
+    height: 40px;
+    width: 100px;
+    border: dotted 1px goldenrod;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    color: goldenrod;
+    cursor: pointer;
+}
+
+.input-box__button:hover {
+    background-color: rgba(218, 165, 32, 0.2);
+}
+
+.container__output-box {
+    width: 100%;
+    height: 440px;
+    opacity: 0;
+    visibility: visible;
+    padding: 0 100px;
+    display: flex;
+    justify-content: space-between;
+    transition: all 1s ease-in-out ;
+}
+
+.output-box__left {
+    width: 450px;
+    height: 430px;
+    margin-top: 10px;
+    margin-right: 20px;
+    padding: 10px 0;
+    border-right: solid 1px goldenrod;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    opacity: 0;
+    transition: all 2s ease-in-out;
+    transition-delay: 0,5s ;
+}
+
+.output-box__container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.output-box__label {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 18px;
+    margin-left: 50px;
+}
+
+.output-categories {
+    width: 200px;
+    height: 50px;
+    padding-left: 20px;
+    /* border: solid 1px red; */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 20px;
+    margin-right: 50px;
+}
+
+.output-categories .span-1 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.output-categories .span-2 {
+    font-size: 22px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.output-box__right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 300px;
+    height: 100%;
+}
+
+.output-box__coat {
+    margin-top: 10px;
+    height: 210px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    opacity: 0;
+    transition: all 1s ease-in-out;
+    transition-delay: 0.7s ;
+}
+
+.output-box__flag {
+    height: 200px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    overflow: hidden;
+    opacity: 0;
+    transition: all 1s ease-in-out;
+    transition-delay: 1s ;
+}
+
+.output-box__coat img {
+    border: 1px solid goldenrod;
+    border-radius: 10px;
+    padding: 5px;
+    height: 90%;
+    width: auto;
+    
+}
+
+.output-box__flag img {
+    border: 1px solid goldenrod;
+    border-radius: 10px;
+    padding: 5px;
+    width: 190px;
+    height: auto;
+}

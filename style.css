@@ -51,12 +51,12 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 10px;
-    transition: all 1s ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
 
 .container__input-box {
     height: 100px;
-    margin-bottom: 50px;
+    margin-bottom: 25px;
     width: 100%;
     padding: 0 100px;
     display: flex;
@@ -116,7 +116,7 @@ body {
     padding: 0 100px;
     display: flex;
     justify-content: space-between;
-    transition: all 1s ease-in-out ;
+    transition: all 0.5s ease-in-out ;
 }
 
 .output-box__left {
@@ -131,8 +131,8 @@ body {
     justify-content: space-between;
     align-items: center;
     opacity: 0;
-    transition: all 2s ease-in-out;
-    transition-delay: 0,5s ;
+    transition: all 0.5s ease-in-out;
+    transition-delay: 1s ;
 }
 
 .output-box__container {
@@ -181,7 +181,7 @@ body {
     justify-content: center;
     overflow: hidden;
     opacity: 0;
-    transition: all 1s ease-in-out;
+    transition: all 0.5s ease-in-out;
     transition-delay: 0.7s ;
 }
 
@@ -194,7 +194,7 @@ body {
     border-radius: 50%;
     overflow: hidden;
     opacity: 0;
-    transition: all 1s ease-in-out;
+    transition: all 0.5s ease-in-out;
     transition-delay: 1s ;
 }
 

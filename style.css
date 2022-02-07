@@ -163,17 +163,6 @@ body {
     user-select: text;
 }
 
-.output-categories .span-1 {
-    font-size: 18px;
-    font-weight: bold;
-}
-
-.output-categories .span-2 {
-    font-size: 22px;
-    font-weight: bold;
-    font-style: italic;
-}
-
 .output-box__right {
     display: flex;
     flex-direction: column;
